@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+        <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <h1>Форма для отзыва</h1>
+    
+    <form action="submit_review.php" method="POST">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Ваш email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="review">Отзыв:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
